@@ -7,6 +7,14 @@ class SVGRender extends RenderService {
     override def renderComponent(box: Box): String = box match {
         case Button(text, dimension) => {
 
+            private val buttonBuilder: StringBuilder = new StringBuilder
+            buttonBuilder.addAll("<rect ")
+            buttonBuilder.addAll("height =").add(dimension.height)
+
+            //todo
+
+            buttonBuilder.toString
+
         }
         case InputBox(dimension) => {
 
